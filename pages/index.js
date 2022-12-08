@@ -1,6 +1,7 @@
+import { Eater } from "@next/font/google";
 import Head from "next/head";
 import Image from "next/image";
-import { cursive } from "../fonts/fonts";
+import { cursive, eater } from "../fonts/fonts";
 
 export default function Home() {
   return (
@@ -12,11 +13,13 @@ export default function Home() {
       </Head>
 
       <main className="flex justify-center items-center h-screen">
-        <div>
+        <div className="flex flex-col gap-3">
           <h1 className="font-bold text-3xl">Testing fonts. 1, 2, 3...</h1>
-          <p className={cursive.className}>Hello, how do I look?</p>
+          <p className={`${eater.className} text-5xl`}>
+            Do I look thorny to you?
+          </p>
           <p className={`${cursive.className} text-3xl`}>
-            Whereas recognition of the inherent dignity
+            I am a dignified font from the olden times
           </p>
         </div>
       </main>
